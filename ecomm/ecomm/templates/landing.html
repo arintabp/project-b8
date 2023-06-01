@@ -1,0 +1,119 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <!-- Font Awesome icons (free version)-->
+        
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/ecomm/static/css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- carousel -->
+    
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+            <div class="carousel-indicators">
+                <button
+                        type="button"
+                        data-mdb-target="#carouselExampleCaptions"
+                        data-mdb-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                ></button>
+                <button
+                        type="button"
+                        data-mdb-target="#carouselExampleCaptions"
+                        data-mdb-slide-to="1"
+                        aria-label="Slide 2"
+                ></button>
+                <button
+                        type="button"
+                        data-mdb-target="#carouselExampleCaptions"
+                        data-mdb-slide-to="2"
+                        aria-label="Slide 3"
+                ></button>
+            </div>
+            <div class="carousel-inner" style="height: 580px">
+                <div class="carousel-item active" style="height: 450px">
+                    <img src="{% static 'img/toko.jpg' %}" class="d-block w-100" alt="Wild Landscape"/>
+                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4); height: 580px"></div>
+                    <div class="carousel-caption d-none d-sm-block mb-5">
+                        <h1 class="mb-4">
+                            <strong>Nikmati kemudahan berbelanja di Toko kami</strong>
+                        </h1>
+                        <p>
+                            <strong>Temukan Gaya Anda dengan Kemudahan Belanja Online di Toko Kami - Fashion Berkualitas Tinggi Hanya di Sini!</strong>
+                        </p>
+                        <a class="btn btn-primary" href="#produk">Lets Shopping</a>
+                    </div>
+                </div>
+                <div class="carousel-item" style="height: 450px">
+                    <img src="{% static 'img/rack.jpeg' %}" class="d-block w-100" alt="Camera"/>
+                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4); height: 580px"></div>
+                    <div class="carousel-caption d-none d-md-block mb-5">
+                        <h1 class="mb-4">
+                            <strong>Nikmati kemudahan berbelanja di Toko kami</strong>
+                        </h1>
+                        <p>
+                            <strong>Temukan Gaya Anda dengan Kemudahan Belanja Online di Toko Kami - Fashion Berkualitas Tinggi Hanya di Sini!</strong>
+                        </p>
+                        <a class="btn btn-primary" href="#produk">Lets Shopping</a>
+                    </div>
+                </div>
+                <div class="carousel-item" style="height: 450px">
+                    <img src="{% static 'img/sal.jpg' %}" class="d-block w-100" alt="Exotic Fruits"/>
+                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4); height: 580px"></div>
+                    <div class="carousel-caption d-none d-md-block mb-5">
+                        <h1 class="mb-4">
+                            <strong>Nikmati kemudahan berbelanja di Toko kami</strong>
+                        </h1>
+                        <p>
+                            <strong>Temukan Gaya Anda dengan Kemudahan Belanja Online di Toko Kami - Fashion Berkualitas Tinggi Hanya di Sini!</strong>
+                        </p>
+                        <a class="btn btn-primary" href="#produk">Lets Shopping</a>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            
+
+        </div>
+                <!-- About-->
+        <section class="about-section text-center mb-8" id="produk" >
+            <div class="container px-4 px-lg-6">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="/ecomm/static/js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </body>
+</html>

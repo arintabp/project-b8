@@ -1,0 +1,36 @@
+
+
+<div class="card mb-5">
+  <div class="card-body">
+    <form method="post" action="{% url 'login' %}">
+      <div class="row">
+        <div class="col-sm-3">
+          <p class="mb-0">Full Name</p>
+        </div>
+        <div class="col-sm-9">
+          <p class="text-muted mb-0">{{ form.field_name }}</p>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary" name="edit" id="{{i.id}}"> Edit Profil </button>
+      <div class="d-flex justify-content-center ">
+        {% if request.user.is_authenticated %}
+          <a href="{% url 'toko:checkout' %}">
+            <button type="button" class="btn btn-outline-primary">Checkout</button>
+          </a>
+          <a href="{% url 'toko:order-summary' %}">
+            <button type="button" class="btn btn-outline-primary ms-4" >Summary Order</button>
+          </a>
+        {%else%}
+          <a href="{% url 'account_login' %}">
+            <button type="button" class="btn btn-outline-primary">Checkout</button>
+          </a>
+          <a href="{% url 'account_login'%}">
+            <button type="button" class="btn btn-outline-primary ms-4" >Summary Order</button>
+          </a>
+        {%endif%}
+      </div>
+    </form>
+
+   
+  </div>
+</div>
